@@ -8,7 +8,6 @@ link: https://bubbli.yrsahl.de
 description: |
   Bubbli is a fictional beverage with its own marketing page! It displays floating beverage cans in various contexts to showcase the product and its design.
 tags:
-  - Front-End
   - React
   - Three.js
 ---

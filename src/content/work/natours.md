@@ -8,7 +8,6 @@ link: https://natours.yrsahl.de
 description: |
   Natours offers tours into nature for everyone with that craving to lose themselves in the great outdoors! Book today (or don't, because it's fictional) to live your best outdoor-life!
 tags:
-  - Front-End
   - HTML5
   - CSS3
 ---

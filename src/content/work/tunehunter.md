@@ -9,7 +9,6 @@ link: https://tunehunter.app
 description: |
   TuneHunter finds you the music you want to buy, quicker! Because sometimes it's all about saving those precious seconds between tab cycles 🕜
 tags:
-  - Full-Stack
   - Next.js
   - TypeScript
 ---

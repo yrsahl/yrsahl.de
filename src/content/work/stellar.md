@@ -8,7 +8,6 @@ link: https://stellar.yrsahl.de
 description: |
   StellarAI is a fictional SaaS that markets its services with a modern, linear-style website. The site incorporates various design elements such as bento grids and visually-pleasing animations to show that they really paid attention in design class.
 tags:
-  - Front-End
   - React
   - GSAP
 ---
