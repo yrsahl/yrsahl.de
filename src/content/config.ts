@@ -5,7 +5,7 @@ const workCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     scope: z.string().optional(),
-    status: z.enum(["finished", "wip"]).optional(),
+    status: z.enum(["finished", "wip"]),
     description: z.string(),
     publishDate: z.coerce.date(),
     tags: z.array(z.string()),
