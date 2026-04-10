@@ -29,7 +29,7 @@ const scopeIcon = scope && isWorkScope(scope) ? ScopeIconMap[scope] : null;
     )
   }
   {
-    data.status && (
+    data.status === "wip" && (
       <div class="status flex gap-4 justify-center">
         <span>{data.status}</span>
         <span>Work in Progress</span>

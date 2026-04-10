@@ -1,7 +1,7 @@
 ---
 title: TuneHunter
-status: 🏗️
 scope: App
+status: finished
 publishDate: 2024-10-01 00:00:00
 img: /assets/tunehunter.webp
 img_alt: A web app with a purple theme displaying a searchbar with fields for Arist and Song and a table with suggestions.

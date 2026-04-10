@@ -4,8 +4,8 @@ const workCollection = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
-    status: z.string().optional(),
     scope: z.string().optional(),
+    status: z.enum(["finished", "wip"]).optional(),
     description: z.string(),
     publishDate: z.coerce.date(),
     tags: z.array(z.string()),

@@ -1,6 +1,7 @@
 ---
 title: Bubbli
 scope: Website
+status: finished
 publishDate: 2024-08-24 00:00:00
 img: /assets/bubbli.webp
 img_alt: Soda cans and a company marketing slogan in front of a yellow background.
