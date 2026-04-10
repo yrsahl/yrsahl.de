@@ -7,10 +7,10 @@ img: /assets/bubbli.webp
 img_alt: Soda cans and a company marketing slogan in front of a yellow background.
 link: https://bubbli.yrsahl.de
 description: |
-  Bubbli is a fictional beverage with its own marketing page! It displays floating beverage cans in various contexts to showcase the product and its design.
+  Bubbli is a product marketing page for a fictional beverage brand, centered around interactive 3D can models rendered directly in the browser.
 tags:
   - React
   - Three.js
 ---
 
-_(Click the image to be taken to the site)_
+The centerpiece is a Three.js scene that places beverage cans in context — floating and rotating against styled backgrounds. React structures the surrounding page, keeping the 3D layer composable alongside standard UI sections.

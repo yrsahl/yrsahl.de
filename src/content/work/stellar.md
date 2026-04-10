@@ -7,10 +7,10 @@ img: /assets/stellar.webp
 img_alt: A dark landing page with big white text introducing the StellarAI company.
 link: https://stellar.yrsahl.de
 description: |
-  StellarAI is a fictional SaaS that markets its services with a modern, linear-style website. The site incorporates various design elements such as bento grids and visually-pleasing animations to show that they really paid attention in design class.
+  StellarAI is a landing page for a fictional AI SaaS, built to explore modern design patterns — bento grids, scroll-driven animations, and high-contrast editorial layouts.
 tags:
   - React
   - GSAP
 ---
 
-_(Click the image to be taken to the site)_
+GSAP drives the animation layer — entrance sequences, parallax effects, and staggered reveals tied to scroll position. The layout draws from the Linear and Vercel school of product design, using a bento grid to organize feature callouts with visual hierarchy.

@@ -27,10 +27,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<BaseLayout
-  title={"My Work | " + entry.data.title}
-  description={entry.data.description}
->
+<BaseLayout title={"My Work | " + entry.data.title} description={entry.data.description}>
   <div class="stack gap-20">
     <div class="stack gap-15">
       <header>
@@ -51,18 +48,11 @@ const { Content } = await entry.render();
       </header>
       <main class="wrapper">
         <div class="stack gap-10 content">
-          {
-            entry.data.img && !entry.data.link && (
-              <img src={entry.data.img} alt={entry.data.img_alt || ""} />
-            )
-          }
-          {
-            entry.data.link && entry.data.img && (
-              <a href={entry.data.link} target="_blank">
-                <img src={entry.data.img} alt={entry.data.img_alt || ""} />
-              </a>
-            )
-          }
+          {entry.data.img && (
+            entry.data.link
+              ? <a href={entry.data.link} target="_blank"><img src={entry.data.img} alt={entry.data.img_alt || ""} /></a>
+              : <img src={entry.data.img} alt={entry.data.img_alt || ""} />
+          )}
           <div class="content">
             <Content />
           </div>
@@ -87,7 +77,10 @@ const { Content } = await entry.render();
   }
 
   .back-link {
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.6;
   }
   .work-scope {
     text-transform: capitalize;
@@ -113,6 +106,7 @@ const { Content } = await entry.render();
   }
 
   .content {
+    font-size: var(--text-md);
     max-width: 65ch;
     margin-inline: auto;
   }
@@ -162,8 +156,8 @@ const { Content } = await entry.render();
 
   @media (min-width: 50em) {
     .back-link {
-      display: block;
       align-self: flex-start;
+      opacity: 1;
     }
 
     .details {
