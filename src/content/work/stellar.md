@@ -1,6 +1,6 @@
 ---
 title: StellarAI
-scope: Website
+scope: Design
 status: finished
 publishDate: 2024-08-13 00:00:00
 img: /assets/stellar.webp

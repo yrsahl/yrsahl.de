@@ -10,7 +10,7 @@ import Hero from "../components/Hero.astro";
 import WorkPreview from "../components/WorkPreview.astro";
 
 const projects = (await getCollection("work")).sort(
-  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 );
 ---
 
@@ -40,9 +40,9 @@ const projects = (await getCollection("work")).sort(
 </BaseLayout>
 
 <style>
+  #work[data-scope="design"] li:not(.design),
   #work[data-scope="website"] li:not(.website),
-  #work[data-scope="app"] li:not(.app),
-  #work[data-scope="experience"] li:not(.experience) {
+  #work[data-scope="shop"] li:not(.shop) {
     display: none;
   }
 </style>

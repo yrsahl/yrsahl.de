@@ -1,6 +1,6 @@
 ---
 title: TuneHunter
-scope: App
+scope: Website
 status: finished
 publishDate: 2024-10-01 00:00:00
 img: /assets/tunehunter.webp

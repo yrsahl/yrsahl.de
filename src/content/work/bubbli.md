@@ -1,6 +1,6 @@
 ---
 title: Bubbli
-scope: Website
+scope: Design
 status: finished
 publishDate: 2024-08-24 00:00:00
 img: /assets/bubbli.webp
