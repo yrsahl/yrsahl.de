@@ -1,20 +1,17 @@
 ---
-import { ScopeIconMap, WorkScopes, type WorkScope } from "@/types";
+import { ScopeIconMap, WorkScopes } from "@/types";
 import Icon from "./Icon.astro";
 import Pill from "./Pill.astro";
 ---
 
-<work-nav
-  class="flex pt-2 md:pt-0 justify-center items-center md:justify-start gap-2 md:gap-4 text-2xl"
->
+<work-nav class="flex pt-2 md:pt-0 justify-center items-center md:justify-start gap-2 md:gap-4 text-2xl">
   <p class="text-lg md:text-2xl">Filter by:</p>
   <div class="flex md:gap-2 flex-wrap">
     {
-      WorkScopes.filter((filter) => filter !== "experience").map((scope) => (
+      WorkScopes.filter((filter) => filter !== "shop").map((scope) => (
         <button data-scope={scope} class="scale-[85%] md:scale-100">
           <Pill>
-            <Icon icon={ScopeIconMap[scope]} size="1.33em" />{" "}
-            {scope.charAt(0).toUpperCase() + scope.slice(1)}
+            <Icon icon={ScopeIconMap[scope]} size="1.33em" /> {scope.charAt(0).toUpperCase() + scope.slice(1)}
           </Pill>
         </button>
       ))
@@ -77,11 +74,8 @@ import Pill from "./Pill.astro";
         });
 
         // Initialize scope state
-        const existingScope = document
-          .querySelector("#work")
-          ?.getAttribute("data-scope");
-        if (existingScope && isWorkScope(existingScope))
-          setScope(existingScope);
+        const existingScope = document.querySelector("#work")?.getAttribute("data-scope");
+        if (existingScope && isWorkScope(existingScope)) setScope(existingScope);
         else setScope(null);
       }
     }
